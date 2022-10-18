@@ -1,0 +1,125 @@
+#portada-index {
+    position: relative;
+}
+
+.img-portada {
+    width: 100%;
+}
+
+#img-portada-mobile {
+    display: none;
+}
+
+.div-portada {
+    position: absolute;
+    width: 90%;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#frase-portada {
+    font-size: 3.8rem;
+    color: #0a014f;
+    margin: 2rem;
+    font-style: italic;
+    font-weight: 300;
+}
+
+#boton-portada {
+    text-decoration: none;
+    padding: 1.3rem 2rem;
+    text-transform: uppercase;
+    font-size: 2rem;
+    background: #b08ce0;
+    border-radius: 5rem;
+    cursor: pointer;
+    color: #ffffff;
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, .2);
+}
+
+#boton-portada:hover {
+    background: #9d78ce;
+    transition: .5s;
+}
+
+.group-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/*.product-card {
+    padding: 3rem 1rem 0.5rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, .2);
+    background: #fafafa;
+    min-width: 20rem;
+    width: 17%;
+    max-width: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.product-card img {
+    margin-bottom: 1rem;
+}
+
+.product-card h3 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 1rem;
+    height: 4rem;
+}
+
+.product-card p {
+    font-size: 1.4rem;
+    color: #696868;
+    padding: 1rem;
+    align-self: flex-end;
+    margin-top: 1rem;
+}
+
+.product-card:hover {
+    transform: scale(1.1);
+}
+*/
+
+/* MEDIAQUERY PARA RESPONSIVE */
+
+@media (max-width: 768px) {
+    #img-portada-desktop {
+        display: none;
+    }
+    #img-portada-mobile {
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+    #img-portada-desktop {
+        display: none;
+    }
+    #img-portada-mobile {
+        display: block;
+    }
+    #frase-portada {
+        font-size: 3rem;
+    }
+    #boton-portada {
+        font-size: 1.8rem;
+    }
+    .product-card {
+        width: 80%;
+        max-width: 50rem;
+        padding-top: 5rem;
+    }
+}

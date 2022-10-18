@@ -1,0 +1,132 @@
+#titulo-pagina-productos {
+    text-align: center;
+}
+
+.nombre-cat-productos {
+    font-size: 2.5rem;
+    margin: 0 1rem 0 1rem;
+}
+
+.contenedor {
+    width: 90%;
+    margin: auto;
+}
+
+.indicadores {
+    text-align: center;
+}
+
+.indicadores button {
+    background: #1f272b;
+    height: 0.3rem;
+    width: 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    border: none;
+    margin-right: 1rem;
+}
+
+.indicadores button:hover,
+.indicadores button.activo {
+    background: #9d78ce;
+}
+
+.cat-productos .contenedor-principal {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.cat-productos .contenedor-principal .flecha-izquierda,
+.cat-productos .contenedor-principal .flecha-derecha {
+    position: absolute;
+    border: none;
+    background: rgba(0, 0, 0, .3);
+    font-size: 2.5rem;
+    height: 50%;
+    top: calc(50% - 25%);
+    line-height: 4rem;
+    width: 3rem;
+    color: #ffffff;
+    cursor: pointer;
+    transition: .2s ease all;
+}
+
+.cat-productos .contenedor-principal .flecha-izquierda {
+    left: 0;
+    border-radius: 0 1rem 1rem 0;
+}
+
+.cat-productos .contenedor-principal .flecha-derecha {
+    right: 0;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.cat-productos .contenedor-principal .flecha-izquierda:hover,
+.cat-productos .contenedor-principal .flecha-derecha:hover {
+    background: rgba(0, 0, 0, .7);
+}
+
+.cat-productos .contenedor-carousel {
+    width: 100%;
+    padding: 1rem 0;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.cat-productos .contenedor-carousel .carousel {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.cat-productos .contenedor-carousel .carousel .producto {
+    min-width: 20%;
+    transition: .3s ease all;
+    box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, .3);
+}
+
+.cat-productos .contenedor-carousel .carousel .producto img {
+    width: 100%;
+    vertical-align: top;
+}
+
+#frase-final-productos {
+    font-size: 2.5rem;
+    font-style: italic;
+    text-align: center;
+    margin: 2rem 2rem 4rem;
+}
+
+.secciones-principales {
+    margin: 5rem 2rem;
+}
+
+.seccion-producto {
+    position: relative;
+}
+
+.ancla-productos {
+    position: absolute;
+    margin-top: -9rem;
+}
+
+
+/* MEDIAQUERY PARA RESPONSIVE */
+
+@media (max-width: 768px) {
+    .cat-productos .contenedor-carousel .carousel .producto {
+        min-width: 25%;
+    }
+}
+
+@media (max-width: 576px) {
+    .cat-productos .contenedor-carousel .carousel .producto {
+        min-width: 50%;
+    }
+    .nombre-cat-productos {
+        font-size: 2rem;
+    }
+    #frase-final-productos {
+        font-size: 2rem;
+    }
+}
