@@ -1,19 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilo.css">
-    <title>Productos - Comishi3D</title>
+    <meta name="theme-color" content="#b08ce0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,600;1,200;1,300&family=Mulish:ital,wght@0,200;0,300;1,200;1,300;1,600&family=Titillium+Web:ital,wght@0,200;0,300;0,600;1,200;1,300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0cebf067a0.js" crossorigin="anonymous"></script>
+    <title>Comishi-Inicio</title>
+    <link rel="icon" href="images/icons8-pincel-16.ico" type="image/x-icon">
+
 </head>
 
 <body>
     <header>
         <nav class="nav-bar">
             <a href="index.html"><img class="logo" src="img/logo.png" alt="logo"></a>
-            <div class="menu">
-                <div class="menu-opciones"></div>
+            <div class="menu-btn">
+                <div class="menu-btn_burguer"></div>
             </div>
             <ul class="nav-menu">
                 <li class="nav-menu-item"><a class="nav-menu-link" href="index.html">Inicio</a></li>
@@ -23,12 +32,64 @@
             </ul>
         </nav>
     </header>
-
     <main>
-       
+        
+        <section class="secciones-principales" id="categoria-productos">
+            <h2 class="subtitulos">Productos</h2>
+            <div class="group-cards">
+                <div class="product-card" >
+                    <img src="img/PROD1.jpeg"   width="400px" height="400px">
+                    
+                <div class="product-card" ">
+                    <img src="img/PROD2.jpeg" width="400px" height="400px"/>
+                   
+                </div>
+                <div class="product-card" >
+                    <img src="img/PROD3.jpeg" width="400px" height="400px"/>
+                    
+                </div>
+                <div class="product-card" >
+                    <img src="img/PROD4.jpeg" width="400px" height="400px"/>
+                    
+                </div>
+                <div class="product-card" >
+                    <img src="img/PROD5.jpeg" width="400px" height="400px"/>
+                    
+                </div>
+                <div class="product-card" id="ancla-tazas">
+                    <img src="img/PROD6.jpeg" width="400px" height="400px"/>
+                    
+                </div>
+                <div class="product-card" id="ancla-tazas">
+                    <img src="img/PROD7.jpeg" width="400px" height="400px"/>
+                    
+                </div>
+                <div class="product-card" id="ancla-tazas">
+                    <img src="img/PROD8.jpeg" width="400px" height="400px"/>
+                    
+                </div>                
+            </div>
+        </section>
     </main>
-
     <footer>
-
+        <img class="logo-footer" src="img/logo_footer.png" alt="logo-redondo">
+        <nav class="footer-menu">
+            <ul>
+                <li><a class="footer-menu-link" href="index.html">Inicio</a></li>
+                <li><a class="footer-menu-link" href="productos.html">Productos</a></li>
+                <li><a class="footer-menu-link " href="info.html">Info</a></li>
+                <li><a class="footer-menu-link " href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="footer-social-media ">
+            <a href="https://www.instagram.com/comishi3d/"><i id="instagram" class="fab fa-instagram "></i></a>
+            <a href="https://www.tiktok.com/@comishi3d"><i id="tiktok" class="fab fa-tiktok "></i></a>
+            <a href="https://wa.me/5491124085931"><i id="whatsapp" class="fab fa-whatsapp "></i></a>
+        </div>        
+       
     </footer>
+    <script src="js/main.js "></script>
+    <script src="js/index.js "></script>
 </body>
+
+</html>

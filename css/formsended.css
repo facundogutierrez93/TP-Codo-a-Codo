@@ -1,0 +1,47 @@
+body {
+    padding-top: 0;
+}
+
+.contenedor-mensaje-envio-formulario {
+    width: 90%;
+    margin: 3rem auto;
+    background: #fff;
+    text-align: center;
+    border-radius: 2rem;
+    padding: 2rem;
+    box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, .3);
+    ;
+}
+
+.logo-envio-formulario {
+    width: 20rem;
+    margin: auto;
+}
+
+.titulo-envio-formulario {
+    font-size: 3rem;
+}
+
+.subtitulo-envio-formulario {
+    font-size: 2rem;
+    text-transform: none;
+}
+
+#volver-al-sitio {
+    font-size: 1.8rem;
+}
+
+
+/* MEDIAQUERY PARA RESPONSIVE */
+
+@media (max-width: 576px) {
+    .titulo-envio-formulario {
+        font-size: 2.3rem;
+    }
+    .subtitulo-envio-formulario {
+        font-size: 1.6rem;
+    }
+    #volver-al-sitio {
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,85 @@
+#titulo-contacto {
+    text-align: center;
+}
+
+#datos-adicionales-contacto {
+    font-size: 1.8rem;
+    display: flex;
+    width: 90%;
+    margin: 2rem auto;
+    justify-content: space-around;
+}
+
+.datos-contacto-clasicos,
+.datos-contacto-redes {
+    max-width: 50%;
+}
+
+#datos-adicionales-contacto .datos-contacto-clasicos div,
+#datos-adicionales-contacto .datos-contacto-redes div {
+    display: flex;
+    align-items: center;
+}
+
+#datos-adicionales-contacto .datos-contacto-clasicos div p,
+#datos-adicionales-contacto .datos-contacto-redes div p {
+    margin: 0;
+}
+
+.icono-contacto {
+    margin-right: 1rem;
+}
+
+#contenedor-secciones-contacto {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: 3rem auto;
+    align-items: center;
+}
+
+#contenedor-secciones-contacto section {
+    max-width: 50%;
+}
+
+#formulario-contacto label {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+#formulario-contacto input,
+#formulario-contacto textarea,
+#formulario-contacto .btn {
+    font-size: 1.6rem;
+}
+
+
+/* MEDIAQUERY PARA RESPONSIVE */
+
+@media (max-width: 768px) {
+    #datos-adicionales-contacto {
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+    .datos-contacto-clasicos,
+    .datos-contacto-redes {
+        margin-bottom: 2rem;
+        max-width: none;
+    }
+    #contenedor-secciones-contacto {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #contenedor-secciones-contacto section {
+        max-width: none;
+    }
+}
+
+@media (max-width: 576px) {
+    #datos-adicionales-contacto {
+        font-size: 1.5rem;
+    }
+    #mapa-google {
+        max-width: 100%;
+    }
+}

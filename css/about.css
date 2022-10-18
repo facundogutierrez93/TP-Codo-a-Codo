@@ -1,0 +1,83 @@
+#contenedor-sobre-mi {
+    margin: 0rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#parrafos-sobre-mi {
+    margin-bottom: 1rem;
+}
+
+#sobre-mi p {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    text-align: justify;
+}
+
+
+
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.3rem 2rem;
+    width: 100%;
+    background-color: rgba(156, 158, 153, 0.8);
+    border: none;
+    border-bottom: 0.1rem solid #fafafa;
+    color: #fafafa;
+    cursor: pointer;
+}
+
+#first-accordion-header {
+    border-radius: 1rem 1rem 0 0;
+}
+
+.last-accordion-header {
+    border-radius: 0 0 1rem 1rem;
+}
+
+.accordion {
+    margin: 2rem;
+}
+
+.accordion-header {
+    font-size: 1.4rem;
+    font-style: italic;
+}
+
+.accordion-header.active {
+    background-color: #117eb1;
+}
+
+.accordion-header.active i {
+    transform: rotate(180deg);
+    transition: all 0.3s ease-in-out;
+}
+
+.accordion-body {
+    padding: 0 1.5rem;
+    background-color: #f3f3f3;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    text-align: justify;
+}
+
+.accordion-body.active {
+    max-height: 30rem;
+    padding: 1.5rem;
+}
+
+
+/* MEDIAQUERY PARA RESPONSIVE */
+
+@media (max-width: 768px) {
+    #contenedor-fb-posts {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #contenedor-fb-posts iframe {
+        max-width: none;
+    }
+}
