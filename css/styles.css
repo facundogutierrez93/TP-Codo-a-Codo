@@ -46,6 +46,9 @@ body {
     height: auto;
     border-radius: 1rem;
     margin-left: 2rem;
+    animation-name: zoom;
+    animation-duration: 1s;
+
 }
 
 .nav-menu {
@@ -58,19 +61,36 @@ body {
     font-size: 1.7rem;
     margin: 0 1rem;
     text-transform: uppercase;
-    width: max-content;
+    width: max-content;  
+    animation-name: zoom;
+    animation-duration: 1s;
+    
+}
+@keyframes zoom {
+    from {transform: scale(1.3);}
+    to {transform: scale(1);}  
 }
 
 .nav-menu-link {
     text-decoration: none;
-    color: #0a014f;
+    color: #241901;
     padding: 0.8rem 1.2rem;
-    border-radius: 5rem;
+    border-radius: 1rem;
 }
 
 .nav-menu-link:hover {
-    background: linear-gradient(to right, #07848d77, #3744b677);
+    background: linear-gradient(to right, #b8ab0077, #6e380bc5); 
     transition: .5s;
+    animation-name: cambiarColor1;
+    animation-duration: 0.5s; 
+}
+
+@keyframes cambiarColor1 {
+    0%   {background: linear-gradient(to right, #6e380bc5, #b8ab0077);}
+    25%  {background: linear-gradient(to right,#775940c5, #b8b26077);}
+    50%  {background: linear-gradient(to right, #b8b8b677, #5f5f5ec5);}
+    75%  {background: linear-gradient(to right, #b8b26077, #775940c5);}
+    100% {background: linear-gradient(to right, #b8ab0077, #6e380bc5);}
 }
 
 .menu-btn {
@@ -139,6 +159,7 @@ main {
 
 .secciones-principales {
     margin: 2rem;
+    text-align: center;
 }
 
 footer {
@@ -289,4 +310,13 @@ footer {
     .subtitulos {
         font-size: 2.5rem;
     }
+}
+
+#frase-portada {
+    font-size: 3.8rem;
+    color: #0a014f;
+    margin: 2rem;
+    font-style: italic;
+    font-weight: 300;
+    text-align: center;
 }
