@@ -26,6 +26,8 @@ body {
     font-size: 1.6rem;
     padding-top: 8rem;
     background-color: #99b1b1;
+    
+    
 }
 
 .nav-bar {
@@ -168,7 +170,8 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    text-align: center;
+    text-align: center;    
+    
 }
 
 .logo-footer {
@@ -320,3 +323,17 @@ footer {
     font-weight: 300;
     text-align: center;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
